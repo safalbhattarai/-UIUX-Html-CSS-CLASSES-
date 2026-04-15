@@ -1,0 +1,143 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child{
+           /* height:100px;
+            width: 100px;*/
+            border:2px solid red;
+            text-align: center;
+            align-content: center;
+
+        }
+
+        .parent{
+            border: 2px solid blue;
+            /* display:flex; */
+            display:grid;
+           /* height: 400px;*/
+            grid-template-columns:200px 200px 200px;
+            grid-template-rows:200px 200px 200px ;
+            gap: 16px;
+            /*justify-content:center ;
+            align-items: center;*/
+
+          grid-template-areas:
+          "box1 box1 box2"
+          "box3  box4 box4 "
+          "box3 box5 box6"
+          
+          ;
+         
+
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child" style="grid-area: box1;">1</div>
+        <div class="child" style="grid-area: box2;">2</div>
+        <div class="child" style="grid-area: box3;">3</div>
+        <div class="child" style="grid-area: box4;">4</div>
+        <div class="child" style="grid-area: box5;">5</div>
+        <div class="child" style="grid-area: box6;">6</div>
+       
+        
+    </div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child{
+           /* height:100px;
+            width: 100px;*/
+            border:2px solid red;
+            text-align: center;
+            align-content: center;
+        }
+
+        .child img{
+            width:100%;
+            height:90%;
+            object-fit:cover;
+        }
+
+        .parent{
+            border: 2px solid blue;
+            /* display:flex; */
+            display:grid;
+           /* height: 400px;*/
+            grid-template-columns:200px 200px 200px;
+            grid-template-rows:200px 200px 200px ;
+            gap: 16px;
+            /*justify-content:center ;
+            align-items: center;*/
+
+          grid-template-areas:
+          "box1 box1 box2"
+          "box3  box4 box4 "
+          "box3 box5 box6"
+          ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child" style="grid-area: box1;">
+            <img src="safal1.png">
+        </div>
+
+        <div class="child" style="grid-area: box2;">
+            <img src="safal2.png">
+        </div>
+
+        <div class="child" style="grid-area: box3;">
+            <img src="safal3.png">
+        </div>
+
+        <div class="child" style="grid-area: box4;">
+            <img src="safal4.png">
+        </div>
+
+        <div class="child" style="grid-area: box5;">
+            <img src="safal5.png">
+        </div>
+
+        <div class="child" style="grid-area: box6;">
+            <img src="safal6.png">
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
