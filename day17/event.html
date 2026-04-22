@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <!-- <h1>Javascript HTML</h1>
+    <h2>The onclick attribute</h2> -->
+
+
+    <!-- <button onclick="document.getElementById('demo').innerHTML=Date()">The time is</button>
+    <p id="demo"></p> -->
+    
+    <!-- <button onclick="displaydate()">The time is</button>
+    <p id="demo"></p>
+
+    <script>
+        function displaydate() {
+            document.getElementById("demo").innerHTML = Date();
+            
+        }
+    </script> -->
+
+
+    <!-- <input id="k" type="text" placeholder="Please press key!">
+    <p id="demo"></p>
+
+
+    <script>
+        const k = document.getElementById("k");
+
+        k.addEventListener("keydown",function(event){
+            document.getElementById('demo').innerHTML= "You pressed: " + event.key;
+        })
+    </script> -->
+
+    <!-- <button id="btn">click</button>
+    <p id="demo"></p>
+
+
+    <script>
+        const btn = document.getElementById("btn");
+
+        btn.addEventListener("click",myfuction);
+
+        function myfuction() {
+            document.getElementById("demo").innerHTML= "Clicked!";
+            
+        }
+    </script> -->
+
+
+    <h2 onclick="changeText(this)">Helloooooo</h2>
+
+
+    <script>
+        function changeText(id) {
+            id.innerHTML = "Opsss"
+            
+        }
+    </script>
+</body>
+</html>

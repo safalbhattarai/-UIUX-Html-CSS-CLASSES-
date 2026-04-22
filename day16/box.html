@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Event</title>
+    <style>
+        #box{
+            border :2px solid red;
+            height:200px;
+            width:200px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id ="box">click me</div>
+
+    <script>
+
+        let box = document.getElementById("box");
+        box.addEventListener("click", function() {
+            box.style.backgroundColor = "green";
+
+            box.innerText="clicked";
+              });
+
+            box.addEventListener("mouseover",function(){
+                box.style.backgroundColor =  "red";
+                box.innerText = "Hovering";
+                
+
+            });
+
+            box.addEventListner("mouseout",function(){
+                box.style.backgroundColor ="white";
+                box.innerText = "click Me"
+
+            } )
+
+
+
+    </script>
+    
+</body>
+</html>
